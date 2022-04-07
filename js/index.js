@@ -1,7 +1,7 @@
 $(() => {
 
     $(function() {
-        if (navigator.userAgent.match(/mobile/i)) {} else {
+        if (navigator.userAgent.match(/mobile/i) && d.width() <= 960) {} else {
             start();
         }
     })
@@ -21,7 +21,7 @@ $(() => {
         $(bg).animate({
             width: '100%',
             marginLeft: '1%'
-        }, 350)
+        }, 600)
 
 
         ppsjb.on('mouseover', () => {
@@ -66,18 +66,18 @@ $(() => {
 
                 magicFlag = false;
             }
-            if (d.scrollTop() > 1000 && chairSwitch) {
+            if (d.scrollTop() > 1100 && chairSwitch) {
                 chairBox.css('display', 'none');
 
                 chair.fadeIn(350);
                 chair.animate({
                     marginTop: '30rem'
-                }, 200)
+                }, 600)
 
 
                 chairSwitch = false;
             }
-            if (d.scrollTop() > 2000 && abstractSwitch) {
+            if (d.scrollTop() > 2100 && abstractSwitch) {
                 abstractBox.css('display', 'none');
                 abstract.fadeIn(350);
                 abstract.animate({
