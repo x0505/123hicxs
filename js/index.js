@@ -18,11 +18,10 @@ $(() => {
         let positionFlag = $('.content-left');
         let d = $(document);
 
-        $(bg).animate({
-            width: '100%',
-            marginLeft: '1%'
-        }, 600)
-
+        // $(bg).animate({
+        //     transform: 'scale(1)',
+        // }, 600)
+        $(bg).addClass('animate')
 
         ppsjb.on('mouseover', () => {
             behind.css('display', 'block');
@@ -55,6 +54,8 @@ $(() => {
 
 
         d.on('scroll', () => {
+            console.log('scrolltop', d.scrollTop())
+            chair.scrollTop(chair.scrollTop() + 10)
             if (d.scrollTop() > 70 && magicFlag) {
                 $(magicFontImg).animate({
                     width: '90%'

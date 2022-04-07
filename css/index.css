@@ -8,14 +8,22 @@
 }
 
 .bg-box {
-    width: 96%;
-    margin-left: 3%;
+    width: 100%;
+    transform: scale(0.8);
+    overflow: hidden;
+    transition: transform 5s linear;
+}
+
+.bg-box.animate {
+    transform: scale(1);
 }
 
 .bg-box img {
     width: 100%;
     height: 100%;
-    margin-top: 0;
+    margin-top: -80px;
+    border-radius: 100%;
+    border: 1px solid red
 }
 
 .contact-us {
@@ -55,7 +63,7 @@
 
 .and-never-define {
     text-align: center;
-    margin: 26vw auto;
+    margin: 20vw auto;
 }
 
 .and-never-define img {
@@ -83,6 +91,12 @@
     border-radius: 5%;
     background-repeat: no-repeat;
     background-size: cover;
+    line-height: 7.5rem;
+    font-size: 6rem;
+}
+
+.module-content li p {
+    font-weight: 500;
 }
 
 .module-content li:first-child {
@@ -109,6 +123,7 @@
     line-height: 14rem;
     background: linear-gradient(180deg, #5D2DFD 0%, #7F5EF0 100%);
     border-radius: 7rem;
+    font-weight: 500;
 }
 
 .chair {
@@ -251,10 +266,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 5rem;
+    font-weight: 500;
 }
 
 .department>li p {
     font-size: 3.5rem;
+    font-weight: 300;
 }
 
 .department>li:first-child {
@@ -307,6 +324,7 @@
     margin-left: 20rem;
     position: relative;
     height: 100rem;
+    margin-top: 3rem;
 }
 
 .team-top {
@@ -363,6 +381,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 20rem auto 15rem;
+    border-radius: 12px;
 }
 
 .location-mobile {
@@ -402,12 +421,14 @@
 .location-detail p:first-child {
     font-size: 10rem;
     line-height: 11rem;
+    font-weight: 700;
 }
 
 .location-detail p:nth-child(2) {
     font-size: 3.5rem;
     font-weight: 700;
     margin: 8rem auto;
+    font-weight: 500;
 }
 
 .location-mobile p:last-child,
